@@ -1,0 +1,80 @@
+// Tarjetas
+.feature-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+
+    // Efecto Hover
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    &__icon {
+        font-size: 6rem; // emojis
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $color-secondary;
+    }
+
+    &__text {
+        font-size: 0.95rem;
+        color: $text-gray;
+        line-height: 1.5;
+    }
+}
+
+// tarjetas testimonio
+.review-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    &__photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%; 
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid $color-primary;
+    }
+
+    &__quote {
+        font-style: italic;
+        color: $text-gray;
+        margin-bottom: 20px;
+    }
+
+    &__author {
+        font-weight: 700;
+        color: $text-dark;
+    }
+
+    &__role {
+        display: block;
+        font-size: 0.85rem;
+        color: $color-primary;
+        margin-bottom: 10px;
+    }
+
+    &__stars {
+        font-size: 0.8rem;
+    }
+}

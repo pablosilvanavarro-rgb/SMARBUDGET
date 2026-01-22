@@ -1,0 +1,30 @@
+
+.cta-banner {
+    background: $gradient-main; 
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .btn--light {
+        background: #fff;
+        color: $color-primary;
+        border: none;
+        
+        &:hover {
+            background: #f0f0f0;
+        }
+    }
+}
+
+.copyright-bar {
+    background-color: #1a1a1a;
+    color: #888;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}

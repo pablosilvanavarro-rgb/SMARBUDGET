@@ -1,0 +1,61 @@
+
+.steps {
+    padding: 80px 0;
+    background-color: #f4f6f9; // Gris claro
+
+    &__heading {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $color-primary;
+        margin-bottom: 10px;
+    }
+    
+    &__subheading {
+        text-align: center;
+        margin-bottom: 60px;
+        color: $text-gray;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; // pal movil
+        gap: 20px;
+    }
+}
+
+//BEM
+.step-item {
+    flex: 1; 
+    text-align: center;
+    min-width: 200px;
+    position: relative; 
+
+    &__number {
+        background-color: $color-secondary;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin: 0 auto 20px auto;
+        font-size: 1.2rem;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        color: $text-dark;
+    }
+}
